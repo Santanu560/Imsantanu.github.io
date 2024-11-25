@@ -90,40 +90,39 @@ body {
 
 
         .carousel{
-          width: 100vw;
           height: 100vh;  
           width: 100vw;
           overflow: hidden;
           position: relative;
       }
-      .carousel .list .item{
-          position: absolute;
-          inset: 0 0 0 0;
-      }
-      .carousel .list .item video{
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-      }
+
       .carousel .list .item img{
           width: 100%;
           height: 100%;
-          object-fit: cover;
+          object-fit: contain;
+          filter: blur(2px);
       }
-      .carousel .list .item .content{
+      .carousel .content{
+        padding: 7px;
           position: absolute;
-          top: 33%;
-          width: 1180px;
-          max-width: 70%;
-          left: 38%;
+          top: 30%;
+          height: 350px;
+          width: 900px;
+          left: 28%;
           transform: translateX(-50%);
-          padding-right: 30%;
+          padding-right: 28%;
           box-sizing: border-box;
           color: #fff;
           text-shadow: 0 5px 10px #0004;
+          backdrop-filter: blur(13px);
+          padding-left: 3%;
+          border: 1px solid #0a00006b;
+          border-radius: 50px ;
+
       }
       .carousel .list .item .author{
-          font-weight: bold;
+          font-weight: bolder;
+          color: #000000;
           letter-spacing: 10px;
 }
 .carousel .list .item .title{
@@ -136,10 +135,10 @@ body {
   font-size: 3em;
   font-weight: bold;
   line-height: 1.3em;
-  width: 80%;
+  width: 1000px;
 }
 .carousel .list .item .des{
-  width: 120%;
+  width: 260%;
   font-size: 130%;
 }
 
@@ -198,10 +197,10 @@ filter: drop-shadow(5px 5px 10px #555); }
 
 .section-2 .container-fluid{
   padding: 12rem;
-  background-image: url("../images/1.webp");
+  background-image: url("../images/10.png");
   background-size: cover;
   background-attachment: fixed;
-  filter: blur(3px);
+  filter: blur(3.5px);
 }
 
 .section-3 .heading-1{
